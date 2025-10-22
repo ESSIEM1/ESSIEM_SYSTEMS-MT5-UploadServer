@@ -16,13 +16,6 @@ A web interface for uploading Expert Advisors, Indicators, and Scripts to MetaTr
 
 ## 🛠 Installation
 
+### One-Line Install (Recommended)
 ```bash
-# Build the image
-docker build -t essiem-mt5-upload-server .
-
-# Run the container
-docker run -d \
-  --name essiem-upload \
-  -p 8080:8080 \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  essiem-mt5-upload-server
+curl -s https://raw.githubusercontent.com/ESSIEM1/ESSIEM_SYSTEMS-MT5-UploadServer/main/install-upload-server.sh | bash
